@@ -55,15 +55,24 @@ fleury_color_brace_highlight            =  defcolor_text_cycle;
 fleury_color_brace_line                 = { 0x8000F3F3, 0x8000F379, 0x80F379F3 };
 fleury_color_brace_annotation           = { 0xC000F3F3, 0xC000F379, 0xC0F379F3 };
 
-fleury_color_index_product_type         = 0xFF00F3F3; // Struct, Enum, Class
-fleury_color_index_sum_type             = 0xFF00F379; // Unions
-fleury_color_index_function             = 0xFF00BDf3; // 0xFFBCD0B3;
+// NOTE(jack): Found by picking product type color and choosing the analogous color 
+// combination: https://www.canva.com/colors/color-wheel/
+fleury_color_index_product_type         = 0xFF10FFFF;
+fleury_color_index_sum_type             = 0xFF10FF88;
+fleury_color_index_function             = 0xFF1088FF;
+
 fleury_color_index_macro                = defcolor_preproc;
 fleury_color_index_constant             = 0xFFF3F3F3; // Enum Values
 fleury_color_index_comment_tag          = 0xFFFFFFFF;
 fleury_color_cursor_macro               = 0xFFC060C0;
 fleury_color_cursor_power_mode          = 0xffffffff;
+fleury_color_cursor_inactive            = 0xff008000;
 fleury_color_plot_cycle                 = { 0xff03d3fc, 0xff22b80b, 0xfff0bb0c, 0xfff0500c };
 fleury_color_token_highlight            = 0xC000EE00;
 fleury_color_token_minor_highlight      = 0xC0797979;
+
+fleury_color_lego_grab                  = 0xffefaf6f;
+fleury_color_lego_splat                 = 0xffefaaef;
+fleury_color_error_annotation           = 0xffff0000;
+
 fleury_color_comment_user_name          = fleury_color_index_comment_tag;
