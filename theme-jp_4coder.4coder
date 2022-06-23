@@ -46,8 +46,8 @@ defcolor_line_numbers_back = 0xFF202020;
 defcolor_line_numbers_text = 0xFF404040;
 
 fleury_color_syntax_crap                = 0x8090B080;
-fleury_color_operators                  = 0xFFF379F3;
-fleury_color_inactive_pane_overlay      = 0x60101010;
+fleury_color_operators                  = 0xFFB0D0D0;
+fleury_color_inactive_pane_overlay      = 0x44000000;
 fleury_color_inactive_pane_background   = defcolor_back;
 fleury_color_file_progress_bar          = 0x4000F3F3;
 
