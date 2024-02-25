@@ -40,39 +40,48 @@ defcolor_pop1 = 0xFF3C57DC;
 defcolor_pop2 = 0xFFFF0000;
 
 defcolor_back_cycle = { 0x0800F3F3, 0x08F379F3, 0x0800F379 };
-defcolor_text_cycle = { 0xFF00F3F3, 0xFFF379F3, 0xFF00F379 };
+//defcolor_text_cycle = { 0xFF00F3F3, 0xFFF379F3, 0xFF00F379 };
+defcolor_text_cycle = {0xFF1F9FFA, 0xFFFED73D, 0xFFD972D3};
 
 defcolor_line_numbers_back = 0xFF0B0E14;
 defcolor_line_numbers_text = 0xFF565B66;
 
-fleury_color_syntax_crap                = 0x8090B080;
+// Support BYP vim layer colours
+defcolor_function                   =  0xFFFFB454;
+defcolor_type                       =  0xFF39BAE6;
+//defcolor_primitive                  =  0xFFB84AFD;
+defcolor_macro                      =  0xFFC060C0;
+defcolor_control                    =  defcolor_preproc;
+defcolor_struct                     =  defcolor_keyword;
+defcolor_non_text                   =  0x8090B080;
+
+//defcolor_vim_filebar_pop            =  0xFF8A4CDB;
+defcolor_vim_chord_text             =  defcolor_text_default;
+defcolor_vim_chord_unresolved       =  defcolor_mark;
+defcolor_vim_chord_error            =  defcolor_special_character;
+
+// Support the Fleury Custom layer colours
+fleury_color_syntax_crap                = defcolor_non_text;
 fleury_color_operators                  = 0xFFF29668;
 fleury_color_inactive_pane_overlay      = 0x00000000;
 fleury_color_inactive_pane_background   = 0x00000000;
 fleury_color_file_progress_bar          = 0x40E6B450;
-
 fleury_color_brace_highlight            = defcolor_text_cycle;
 fleury_color_brace_line                 = 0x806C7380;
 fleury_color_brace_annotation           = 0xFF6C7380;
-
-fleury_color_index_product_type         = 0xFF39BAE6;
-fleury_color_index_sum_type             = fleury_color_index_product_type;
-fleury_color_index_function             = 0xFFFFB454;
-
+fleury_color_index_product_type         = defcolor_type;
+fleury_color_index_sum_type             = defcolor_type;
+fleury_color_index_function             = defcolor_function;
 fleury_color_index_macro                = defcolor_preproc;
 fleury_color_index_constant             = 0xFFD2A6FF;
 fleury_color_index_comment_tag          = 0xFFFFFFFF;
-fleury_color_cursor_macro               = 0xFFC060C0;
-
+fleury_color_cursor_macro               = defcolor_macro;
 fleury_color_cursor_power_mode          = 0xffC82048;
 fleury_color_cursor_inactive            = 0xFF876013;
-
 fleury_color_plot_cycle                 = { 0xff03d3fc, 0xff22b80b, 0xfff0bb0c, 0xfff0500c };
 fleury_color_token_highlight            = 0xC0E6B450;
 fleury_color_token_minor_highlight      = 0xC0797979;
-
 fleury_color_lego_grab                  = 0xFFE6B450;
 fleury_color_lego_splat                 = 0xffefaaef;
 fleury_color_error_annotation           = 0xFFD95757;
-
 fleury_color_comment_user_name          = fleury_color_index_comment_tag;
