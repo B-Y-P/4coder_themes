@@ -46,22 +46,24 @@ defcolor_text_cycle = {0xFF1F9FFA, 0xFFFED73D, 0xFFD972D3};
 defcolor_line_numbers_back = 0xFF0B0E14;
 defcolor_line_numbers_text = 0xFF565B66;
 
-// Support BYP vim layer colours
+// QOL Custom layer colours (And BYP's layer)
 defcolor_function                   =  0xFFFFB454;
 defcolor_type                       =  0xFF39BAE6;
-//defcolor_primitive                  =  0xFFB84AFD;
-defcolor_macro                      =  0xFFC060C0;
-defcolor_control                    =  defcolor_preproc;
+defcolor_macro                      =  defcolor_preproc;
+defcolor_enum                       =  0xFFD2A6FF;
+defcolor_primitive                  =  defcolor_type;
 defcolor_struct                     =  defcolor_keyword;
 defcolor_non_text                   =  0x8090B080;
+defcolor_control                    =  defcolor_keyword;
 
+// Support BYP vim layer 
 //defcolor_vim_filebar_pop            =  0xFF8A4CDB;
 defcolor_vim_chord_text             =  defcolor_text_default;
 defcolor_vim_chord_unresolved       =  defcolor_mark;
 defcolor_vim_chord_error            =  defcolor_special_character;
 
 // Support the Fleury Custom layer colours
-fleury_color_syntax_crap                = defcolor_non_text;
+fleury_color_syntax_crap                =  defcolor_non_text;
 fleury_color_operators                  = 0xFFF29668;
 fleury_color_inactive_pane_overlay      = 0x00000000;
 fleury_color_inactive_pane_background   = 0x00000000;
