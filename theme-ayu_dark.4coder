@@ -57,7 +57,7 @@ defcolor_non_text                   =  0x8090B080;
 defcolor_control                    =  defcolor_keyword;
 
 // Support BYP vim layer 
-//defcolor_vim_filebar_pop            =  0xFF8A4CDB;
+defcolor_vim_filebar_pop            =  0xFFE9B359;
 defcolor_vim_chord_text             =  defcolor_text_default;
 defcolor_vim_chord_unresolved       =  defcolor_mark;
 defcolor_vim_chord_error            =  defcolor_special_character;
