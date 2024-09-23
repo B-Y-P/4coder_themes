@@ -37,14 +37,23 @@ defcolor_text_cycle            = { 0xffc0a583, 0xffb09573 };
 defcolor_line_numbers_back     = 0xFF101010;
 defcolor_line_numbers_text     = 0xFF404040;
 
+// QOL colours
+defcolor_non_text = 0xff907553;
+defcolor_function = 0xffcc5735;
+defcolor_type = 0xffd8a51d;
+defcolor_macro = 0xff478980;
+defcolor_enum = 0xff478980;
+defcolor_control = defcolor_keyword;
+defcolor_primitive = defcolor_keyword;
+defcolor_struct = defcolor_keyword;
+
 // TODO(casey): Fix the selection of these so that it picks based on mode, just like the regular cursor
 fleury_color_cursor_inactive       = { 0xFF404040 };
-
-fleury_color_index_product_type    = 0xffd8a51d;
-fleury_color_index_sum_type        = 0xffd8a51d;
-fleury_color_index_function        = 0xffcc5735; // NOTE(rjf): Used for coloring identifiers that have been parsed by the indexer as a function
+fleury_color_index_product_type    = defcolor_type;
+fleury_color_index_sum_type        = defcolor_type;
+fleury_color_index_function        = defcolor_function; // NOTE(rjf): Used for coloring identifiers that have been parsed by the indexer as a function
 fleury_color_index_constant        = 0xff478980;
-fleury_color_index_macro           = 0xff478980; // NOTE(rjf): Used for coloring identifiers that have been parsed by the indexer as a macro
+fleury_color_index_macro           = defcolor_macro; // NOTE(rjf): Used for coloring identifiers that have been parsed by the indexer as a macro
 fleury_color_index_4coder_command  = 0xFF23de33; // NOTE(rjf): Used for coloring identifiers that have been parsed by the indexer as a 4coder command
 fleury_color_index_comment_tag     = 0xff00ff00;
 fleury_color_index_decl            = 0xffc04047;
@@ -52,7 +61,7 @@ fleury_color_comment_user_name     = 0xffa0a0a0;
 
 fleury_color_error_annotation            = 0xffff0000;
 
-fleury_color_syntax_crap           = 0xff907553; // NOTE(rjf): Syntax Crap: Braces, semicolons, stuff we have to input because we use text files to express complex semantic information
+fleury_color_syntax_crap           = defcolor_non_text; // NOTE(rjf): Syntax Crap: Braces, semicolons, stuff we have to input because we use text files to express complex semantic information
 fleury_color_operators             = 0xff907553; // NOTE(rjf): Operators: Color used for operators
 fleury_color_inactive_pane_overlay = 0x00000000; // NOTE(rjf): The color of a rectangle drawn over inactive panes, for darkening/etc.
 fleury_color_inactive_pane_background = 0xFF0C0C0C;

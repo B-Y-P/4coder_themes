@@ -46,15 +46,16 @@ defcolor_text_cycle                 = {0xFFF00000, 0xFF00F000, 0xFF0080F0, 0xFFF
 defcolor_line_numbers_back          =  defcolor_back;
 defcolor_line_numbers_text          =  0xFF858578;
 
-/// BYP Colors
+// QOL colors
+defcolor_non_text                   =  0xFFEFEFEF;
 defcolor_function                   =  0xFFDCDC9D;
-//defcolor_function                   =  defcolor_bar;
 defcolor_type                       =  0xFF4EC9B0;
-defcolor_primitive                  =  0xFF569CD6;
 defcolor_macro                      =  0xFF569CB3;
-defcolor_control                    =  defcolor_preproc;
+defcolor_enum                       =  0xFFD2A6FF;
+defcolor_primitive                  =  0xFF569CD6;
 defcolor_struct                     =  defcolor_primitive;
-defcolor_non_text                   = 0xFFEFEFEF;
+defcolor_non_text                   =  0x8090B080;
+defcolor_control                    =  defcolor_preproc;
 
 /// Vim Colors
 defcolor_vim_filebar_pop            =  0xFF0079BA;

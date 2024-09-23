@@ -37,7 +37,17 @@ defcolor_text_cycle            = { 0xFFA00000, 0xFF00A000, 0xFF0030B0, 0xFFA0A00
 defcolor_line_numbers_back     = 0xFF101010;
 defcolor_line_numbers_text     = 0xFF404040;
 
-fleury_color_syntax_crap           = 0xff5c4d3c;
+// QOL Colors:
+defcolor_non_text                   =  0xff5c4d3c;
+defcolor_function                   =  0xFFeb7134;
+defcolor_type                       =  0xFFedb211;
+defcolor_macro                      =  0xFF2895c7;
+defcolor_enum                       =  0xff6eb535;
+defcolor_control                    =  defcolor_keyword;
+defcolor_primitive                  =  defcolor_keyword;
+defcolor_struct                     =  defcolor_keyword;
+
+fleury_color_syntax_crap           = defcolor_non_next;
 fleury_color_operators             = 0xFFdc7575;
 fleury_color_inactive_pane_overlay = 0x44000000;
 fleury_color_inactive_pane_background = 0xff000000;
@@ -45,11 +55,11 @@ fleury_color_file_progress_bar     = 0x60634323;
 fleury_color_brace_highlight       = { 0xff8ffff2 };
 fleury_color_brace_line            = { 0x809ba290 };
 fleury_color_brace_annotation      = { 0x809ba290 };
-fleury_color_index_product_type    = 0xFFedb211;
+fleury_color_index_product_type    = defcolor_type;
 fleury_color_index_sum_type        = 0xFFa7eb13;
-fleury_color_index_function        = 0xFFeb7134;
-fleury_color_index_macro           = 0xFF2895c7;
-fleury_color_index_constant        = 0xff6eb535;
+fleury_color_index_function        = defcolor_function;
+fleury_color_index_macro           = defcolor_macro;
+fleury_color_index_constant        = defcolor_enum;
 fleury_color_index_comment_tag     = 0xff27cc7f;
 fleury_color_cursor_macro          = 0xffde2368;
 fleury_color_cursor_power_mode     = 0xffefaf2f;

@@ -20,8 +20,6 @@ defcolor_keyword = 0xFFFFFFFF;
 defcolor_str_constant = 0xFF2EC09C;
 defcolor_char_constant = defcolor_str_constant;
 defcolor_int_constant = 0xFFDE825B; // orange
-//defcolor_int_constant = 0xFF5EEBDE; // blue
-//defcolor_int_constant = defcolor_text_default;
 defcolor_float_constant = defcolor_int_constant;
 defcolor_bool_constant = defcolor_str_constant;
 defcolor_include = defcolor_str_constant;
@@ -42,13 +40,22 @@ defcolor_base = 0xFF000000;
 defcolor_pop1 = 0xFF03CF0C;
 defcolor_pop2 = 0xFFFF0000;
 
-// defcolor_back_cycle = {0x18000000, 0x30000000, 0x48000000, 0x60000000};
 defcolor_back_cycle = {defcolor_back};
-// defcolor_text_cycle = {0xFFA00000, 0xFF00A000, 0xFF0020B0, 0xFFA0A000};
 defcolor_text_cycle = {defcolor_text_default};
 
 defcolor_line_numbers_back = 0xFF082628;
 defcolor_line_numbers_text = 0xFF082628;
 
-defcolor_function_name = 0xFFD4D4D4;
-defcolor_type_name     = 0xFF86E08f;
+// QOL colours
+defcolor_non_text = defcolor_text_default;
+defcolor_function = 0xFFD4D4D4;
+defcolor_type = 0xFF86E08f;
+defcolor_macro = defcolor_text_default;
+defcolor_enum = defcolor_text_default;
+defcolor_control = defcolor_keyword;
+defcolor_primitive = defcolor_keyword;
+defcolor_struct = defcolor_keyword;
+
+// Old names
+defcolor_function_name = defcolor_function;
+defcolor_type_name     = defcolor_type;
